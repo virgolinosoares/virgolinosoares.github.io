@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>VAR-SLAM</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <main class="container">
+    <p><a href="/">← Home</a></p>
+
+    <h1>VAR-SLAM</h1>
+    <p class="muted">Visual Adaptive and Robust SLAM for Dynamic Environments</p>
+    <p class="muted">ICRA 2026 — under review</p>
+
+    <p>
+      <a href="https://github.com/iit-DLSLab/VAR-SLAM">Code</a>
+    </p>
+
+    <h2>Abstract</h2>
+    <p>Visual SLAM in dynamic environments remains challenging, as several existing methods rely on semantic
+filtering that only handles known object classes, or use fixed
+robust kernels that cannot adapt to unknown moving objects,
+leading to degraded accuracy when they appear in the scene.
+We present VAR-SLAM (Visual Adaptive and Robust SLAM),
+an ORB-SLAM3-based system that combines a lightweight
+semantic keypoint filter to deal with known moving objects,
+with Barron’s adaptive robust loss to handle unknown ones.
+The shape parameter of the robust kernel is estimated online
+from residuals, allowing the system to automatically adjust
+between Gaussian and heavy-tailed behavior. We evaluate VARSLAM on the TUM RGB-D, Bonn RGB-D Dynamic, and
+OpenLORIS datasets, which include both known and unknown
+moving objects. Results show improved trajectory accuracy and
+robustness over state-of-the-art baselines, achieving up to 25%
+lower ATE RMSE than NGD-SLAM on challenging sequences,
+while maintaining performance at 27 FPS on average.</p>
+  </main>
+</body>
+</html>
