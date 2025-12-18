@@ -5,21 +5,67 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>VAR-SLAM</title>
   <link rel="stylesheet" href="../style.css" />
+  <style>
+    /* Page-specific tweaks (keeps your main style.css simple) */
+    .links { display:flex; flex-wrap:wrap; gap:10px; margin:16px 0 18px; }
+    .btn {
+      display:inline-block; padding:10px 14px; border-radius:10px;
+      text-decoration:none; font-weight:600; font-size:14px;
+      border:1px solid #111827; background:#111827; color:#fff;
+    }
+    .btn:hover { opacity:0.92; }
+    .btn.disabled {
+      background:transparent; color:#4b5563; border:1px solid #e5e7eb; cursor:not-allowed;
+    }
+    .hero-title { margin: 10px 0 10px; font-size: clamp(28px, 3.2vw, 44px); letter-spacing:-0.02em; line-height:1.12; }
+    .authors { margin: 6px 0; font-size: 18px; }
+    .affil, .venue { margin: 6px 0; color:#4b5563; }
+    figure { margin: 14px 0 0; }
+    figure img {
+      width:100%; height:auto; display:block; border-radius:14px; border:1px solid #e5e7eb;
+    }
+    figcaption { margin-top: 8px; color:#4b5563; font-size:14px; }
+    .section { margin-top: 28px; padding-top: 22px; border-top:1px solid #e5e7eb; }
+    .bibtex {
+      border:1px solid #e5e7eb; border-radius:14px; padding:14px 16px; overflow-x:auto;
+      background:#fafafa;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      font-size: 13px;
+    }
+  </style>
 </head>
+
 <body>
   <main class="container">
     <p><a href="/">← Home</a></p>
 
-    <h1>VAR-SLAM</h1>
-    <p class="muted">Visual Adaptive and Robust SLAM for Dynamic Environments</p>
-    <p class="muted">ICRA 2026 — under review</p>
+    <h1 class="hero-title">VAR-SLAM: Visual Adaptive and Robust SLAM for Dynamic Environments</h1>
 
-    <p>
-      <a href="https://github.com/iit-DLSLab/VAR-SLAM">Code</a>
+    <p class="authors">
+      Joao Carlos Virgolino Soares,&nbsp;
+      Gabriel Fischer Abati,&nbsp;
+      Claudio Semini
     </p>
 
-    <h2>Abstract</h2>
-    <p>Visual SLAM in dynamic environments remains challenging, as several existing methods rely on semantic
+    <p class="affil">Dynamic Legged Systems (DLS) lab, Istituto Italiano di Tecnologia (IIT)</p>
+    <p class="venue">ICRA 2026 — under review</p>
+
+    <div class="links">
+      <a class="btn" href="REPLACE_WITH_PAPER_URL.pdf" target="_blank" rel="noopener">Paper</a>
+      <a class="btn" href="REPLACE_WITH_ARXIV_URL" target="_blank" rel="noopener">arXiv</a>
+      <a class="btn disabled" href="#" onclick="return false;">Video (coming soon)</a>
+      <a class="btn" href="https://github.com/iit-DLSLab/VAR-SLAM" target="_blank" rel="noopener">Code</a>
+    </div>
+
+    <figure>
+      <img src="assets/title.png" alt="VAR-SLAM teaser image" />
+      <figcaption>VAR-SLAM teaser.</figcaption>
+    </figure>
+
+    <section class="section" id="abstract">
+      <h2>Abstract</h2>
+      <p>
+        Visual SLAM in dynamic environments remains challenging, as several existing methods rely on semantic
 filtering that only handles known object classes, or use fixed
 robust kernels that cannot adapt to unknown moving objects,
 leading to degraded accuracy when they appear in the scene.
@@ -34,7 +80,23 @@ OpenLORIS datasets, which include both known and unknown
 moving objects. Results show improved trajectory accuracy and
 robustness over state-of-the-art baselines, achieving up to 25%
 lower ATE RMSE than NGD-SLAM on challenging sequences,
-while maintaining performance at 27 FPS on average.</p>
+while maintaining performance at 27 FPS on average.      </p>
+    </section>
+
+    <section class="section" id="video">
+      <h2>Video</h2>
+      <p class="muted">Coming soon.</p>
+    </section>
+
+    <section class="section" id="citation">
+      <h2>Citation</h2>
+      <div class="bibtex">@inproceedings{Soares2026VARSLAM,
+  title     = {VAR-SLAM: Visual Adaptive and Robust SLAM for Dynamic Environments},
+  author    = {Soares, Joao Carlos Virgolino and Abati, Gabriel Fischer and Semini, Claudio},
+  year      = {2026},
+  note      = {under review}
+}</div>
+    </section>
   </main>
 </body>
 </html>
