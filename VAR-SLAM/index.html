@@ -1,102 +1,142 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8">
+  <meta name="description" content="VAR-SLAM: Visual Adaptive and Robust SLAM for Dynamic Environments">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>VAR-SLAM</title>
-  <link rel="stylesheet" href="../style.css" />
-  <style>
-    /* Page-specific tweaks (keeps your main style.css simple) */
-    .links { display:flex; flex-wrap:wrap; gap:10px; margin:16px 0 18px; }
-    .btn {
-      display:inline-block; padding:10px 14px; border-radius:10px;
-      text-decoration:none; font-weight:600; font-size:14px;
-      border:1px solid #111827; background:#111827; color:#fff;
-    }
-    .btn:hover { opacity:0.92; }
-    .btn.disabled {
-      background:transparent; color:#4b5563; border:1px solid #e5e7eb; cursor:not-allowed;
-    }
-    .hero-title { margin: 10px 0 10px; font-size: clamp(28px, 3.2vw, 44px); letter-spacing:-0.02em; line-height:1.12; }
-    .authors { margin: 6px 0; font-size: 18px; }
-    .affil, .venue { margin: 6px 0; color:#4b5563; }
-    figure { margin: 14px 0 0; }
-    figure img {
-      width:100%; height:auto; display:block; border-radius:14px; border:1px solid #e5e7eb;
-    }
-    figcaption { margin-top: 8px; color:#4b5563; font-size:14px; }
-    .section { margin-top: 28px; padding-top: 22px; border-top:1px solid #e5e7eb; }
-    .bibtex {
-      border:1px solid #e5e7eb; border-radius:14px; padding:14px 16px; overflow-x:auto;
-      background:#fafafa;
-      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-      font-size: 13px;
-    }
-  </style>
+
+  <!-- Nerfies CSS -->
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
 </head>
 
 <body>
-  <main class="container">
-    <p><a href="/">← Home</a></p>
 
-    <h1 class="hero-title">VAR-SLAM: Visual Adaptive and Robust SLAM for Dynamic Environments</h1>
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
 
-    <p class="authors">
-      Joao Carlos Virgolino Soares,&nbsp;
-      Gabriel Fischer Abati,&nbsp;
-      Claudio Semini
-    </p>
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
 
-    <p class="affil">Dynamic Legged Systems (DLS) lab, Istituto Italiano di Tecnologia (IIT)</p>
-    <p class="venue">ICRA 2026 — under review</p>
+          <h1 class="title is-1 publication-title">
+            VAR-SLAM: Visual Adaptive and Robust SLAM for Dynamic Environments
+          </h1>
 
-    <div class="links">
-      <a class="btn" href="REPLACE_WITH_PAPER_URL.pdf" target="_blank" rel="noopener">Paper</a>
-      <a class="btn" href="REPLACE_WITH_ARXIV_URL" target="_blank" rel="noopener">arXiv</a>
-      <a class="btn disabled" href="#" onclick="return false;">Video (coming soon)</a>
-      <a class="btn" href="https://github.com/iit-DLSLab/VAR-SLAM" target="_blank" rel="noopener">Code</a>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">Joao Carlos Virgolino Soares,</span>
+            <span class="author-block">Gabriel Fischer Abati,</span>
+            <span class="author-block">Claudio Semini</span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              Dynamic Legged Systems (DLS) lab, Istituto Italiano di Tecnologia (IIT)
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">ICRA 2026 — under review</span>
+          </div>
+
+          <div class="publication-links">
+            <span class="link-block">
+              <a href="REPLACE_WITH_PAPER_URL.pdf"
+                 class="external-link button is-normal is-rounded is-dark">
+                <span>Paper</span>
+              </a>
+            </span>
+
+            <span class="link-block">
+              <a href="REPLACE_WITH_ARXIV_URL"
+                 class="external-link button is-normal is-rounded is-dark">
+                <span>arXiv</span>
+              </a>
+            </span>
+
+            <span class="link-block">
+              <a class="button is-normal is-rounded is-light" disabled>
+                <span>Video (coming soon)</span>
+              </a>
+            </span>
+
+            <span class="link-block">
+              <a href="https://github.com/iit-DLSLab/VAR-SLAM"
+                 class="external-link button is-normal is-rounded is-dark">
+                <span>Code</span>
+              </a>
+            </span>
+          </div>
+
+        </div>
+      </div>
+
     </div>
+  </div>
+</section>
 
-    <figure>
-      <img src="assets/title.png" alt="VAR-SLAM teaser image" />
-      <figcaption>VAR-SLAM teaser.</figcaption>
-    </figure>
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="./static/images/title.png" alt="VAR-SLAM teaser">
+    </div>
+  </div>
+</section>
 
-    <section class="section" id="abstract">
-      <h2>Abstract</h2>
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <h2 class="title is-3">Abstract</h2>
+
+    <div class="content has-text-justified">
       <p>
         Visual SLAM in dynamic environments remains challenging, as several existing methods rely on semantic
-filtering that only handles known object classes, or use fixed
-robust kernels that cannot adapt to unknown moving objects,
-leading to degraded accuracy when they appear in the scene.
-We present VAR-SLAM (Visual Adaptive and Robust SLAM),
-an ORB-SLAM3-based system that combines a lightweight
-semantic keypoint filter to deal with known moving objects,
-with Barron’s adaptive robust loss to handle unknown ones.
-The shape parameter of the robust kernel is estimated online
-from residuals, allowing the system to automatically adjust
-between Gaussian and heavy-tailed behavior. We evaluate VARSLAM on the TUM RGB-D, Bonn RGB-D Dynamic, and
-OpenLORIS datasets, which include both known and unknown
-moving objects. Results show improved trajectory accuracy and
-robustness over state-of-the-art baselines, achieving up to 25%
-lower ATE RMSE than NGD-SLAM on challenging sequences,
-while maintaining performance at 27 FPS on average.      </p>
-    </section>
+        filtering that only handles known object classes, or use fixed robust kernels that cannot adapt to unknown
+        moving objects. We present VAR-SLAM (Visual Adaptive and Robust SLAM), an ORB-SLAM3-based system that combines
+        a lightweight semantic keypoint filter to deal with known moving objects, with Barron’s adaptive robust loss
+        to handle unknown ones. The shape parameter of the robust kernel is estimated online from residuals, allowing
+        the system to automatically adjust between Gaussian and heavy-tailed behavior. We evaluate VAR-SLAM on the
+        TUM RGB-D, Bonn RGB-D Dynamic, and OpenLORIS datasets. Results show improved trajectory accuracy and robustness
+        over state-of-the-art baselines while maintaining real-time performance.
+      </p>
+    </div>
 
-    <section class="section" id="video">
-      <h2>Video</h2>
-      <p class="muted">Coming soon.</p>
-    </section>
+  </div>
+</section>
 
-    <section class="section" id="citation">
-      <h2>Citation</h2>
-      <div class="bibtex">@inproceedings{Soares2026VARSLAM,
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3">Video</h2>
+    <p>Coming soon.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3">Citation</h2>
+
+<pre>
+@inproceedings{Soares2026VARSLAM,
   title     = {VAR-SLAM: Visual Adaptive and Robust SLAM for Dynamic Environments},
   author    = {Soares, Joao Carlos Virgolino and Abati, Gabriel Fischer and Semini, Claudio},
   year      = {2026},
   note      = {under review}
-}</div>
-    </section>
-  </main>
+}
+</pre>
+
+  </div>
+</section>
+
+<!-- Nerfies JS -->
+<script src="./static/js/jquery.min.js"></script>
+<script src="./static/js/bulma-carousel.min.js"></script>
+<script src="./static/js/bulma-slider.min.js"></script>
+<script src="./static/js/index.js"></script>
+
 </body>
 </html>
+
