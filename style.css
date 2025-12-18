@@ -1,0 +1,6 @@
+:root { --fg:#111827; --muted:#4b5563; }
+*{ box-sizing:border-box; }
+body{ margin:0; font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial; color:var(--fg); }
+.container{ max-width:900px; margin:0 auto; padding:28px 20px; }
+.muted{ color:var(--muted); }
+a{ color:inherit; }
